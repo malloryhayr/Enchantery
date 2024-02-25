@@ -66,18 +66,4 @@ public class TooltipMixin {
             });
         }
     }
-
-    @Inject(method = "inventoryTick", at = @At(value = "HEAD"))
-    public void inventoryTick(Level level, Entity entity, int inventorySlot, boolean isCurrentItem, CallbackInfo ci) {
-        EnchanteryLogic.leechingCurseLogic(level, entity, inventorySlot);
-    }
-
-    @ModifyVariable(
-            method = "hurt",
-            at = @At(value = "HEAD"), index = 1, argsOnly = true)
-    public int extraDamage(int amount) {
-        int f = EnchantmentHelper.getItemEnchantmentLevel(ModEnchants.DIMINISHING_CURSE.get(), (ItemStack)(Object) this);
-        if (f > 0) amount = amount + f;
-        return amount;
-    }
 }

@@ -4,6 +4,7 @@
   "package": "com.ordana.enchantery.mixins",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "TooltipMixin",
   ],
   "mixins": [
     "AnvilMixin",
@@ -18,7 +19,7 @@
     "LivingEntityMixin",
     "ServerPlayerMixin",
     "SwordItemMixin",
-    "TooltipMixin",
+    "TooltipMixinServer",
     "VillagerTradesMixin"
   ],
   "injectors": {

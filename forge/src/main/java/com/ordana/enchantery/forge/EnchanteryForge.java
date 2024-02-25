@@ -39,11 +39,11 @@ public class EnchanteryForge {
     }
      */
 
-    @SubscribeEvent
-    public static void onRenderLevel(RenderLevelStageEvent event){
-        if(event.getStage() == RenderLevelStageEvent.Stage.AFTER_ENTITIES) {
-            BookshelfNameRendererEvent.renderBookName(Minecraft.getInstance().level, Minecraft.getInstance().hitResult);
-        }
-    }
+//    @SubscribeEvent
+//    public static void onRenderLevel(RenderLevelStageEvent event){
+//        if(event.getStage() == RenderLevelStageEvent.Stage.AFTER_ENTITIES) {
+//            BookshelfNameRendererEvent.renderBookName(Minecraft.getInstance().level, Minecraft.getInstance().hitResult);
+//        }
+//    }
 }
 
